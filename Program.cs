@@ -128,11 +128,8 @@
 
         private void CreatedEventHandler(object source, System.IO.FileSystemEventArgs e)
         {
-            //if (System.IO.Path.GetFileNameWithoutExtension(e.FullPath).ToLower() == "e-mail-test")
-            //{
-            //    log("Sending test email: " + e.FullPath);
-            //    sus.Mailer.send(e.FullPath);
-            //}
+
+            System.Console.WriteLine("created file " + e.FullPath);
         }
 
         private void NotAccessibleError(string watchfolder)
